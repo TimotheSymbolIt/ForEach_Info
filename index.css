@@ -70,4 +70,21 @@ h1 {
   cursor: pointer;
 }
 
+/* Media Queries de header */
+
+@media screen and (max-width: 600px) {
+  #subscribe_button,
+  .menu_button_label,
+  #header_section_subtitle {
+    display: none;
+  }
+
+  #header_section {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*  */
+
 /*  */
