@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+#top_red_divider {
+  height: 5px;
+  background: red;
+}
+
+#header_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header_section_left_part {
+  display: flex;
+}
+
+/*  */
