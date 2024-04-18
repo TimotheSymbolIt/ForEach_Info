@@ -3,11 +3,19 @@
   src: url(./assets/fonts/Chunk.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  all: unset;
 }
 
 ul {
@@ -112,11 +120,13 @@ nav ul {
   margin: auto;
 }
 
-nav ul li {
+nav a {
   flex-basis: 0;
   flex-grow: 1;
-  padding: 10px;
+}
 
+nav ul li {
+  padding: 10px;
   text-align: center;
 }
 
