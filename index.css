@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Chunk";
+  src: url(./assets/fonts/Chunk.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,16 +13,61 @@
 
 #top_red_divider {
   height: 5px;
-  background: red;
+  background: #dc5f5f;
 }
 
 #header_section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 0;
+  max-width: 1200px;
+  margin: auto;
 }
 
 #header_section_left_part {
   display: flex;
+  align-items: center;
+}
+
+#menu_button {
+  background-color: rgb(204, 204, 204);
+  padding: 5px 10px;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+}
+
+#menu_button:hover {
+  background-color: rgb(181, 181, 181);
+  cursor: pointer;
+}
+
+.menu_button_label {
+  margin-left: 10px;
+}
+
+h1 {
+  margin-left: 10px;
+  font-family: "Chunk";
+  color: #dc5f5f;
+}
+
+#header_section_subtitle {
+  margin-left: 10px;
+}
+
+#subscribe_button {
+  background-color: #ffd830;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+#subscribe_button:hover {
+  background-color: rgb(236, 199, 38);
+  cursor: pointer;
 }
 
 /*  */
