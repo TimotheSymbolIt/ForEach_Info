@@ -14,6 +14,11 @@ ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 /* Header */
 
 #top_red_divider {
@@ -130,5 +135,31 @@ nav ul li:hover {
 }
 
 /*  */
+
+/*  */
+
+/* Main */
+
+.articles {
+  display: flex;
+
+  background-color: grey;
+}
+
+.article {
+  display: flex;
+
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.image_container {
+  width: 50%;
+  height: 200px;
+}
+
+.article_description {
+  width: 50%;
+}
 
 /*  */
