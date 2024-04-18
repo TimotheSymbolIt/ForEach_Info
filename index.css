@@ -334,7 +334,7 @@ footer ul li {
   padding: 10px;
 }
 
-.material-icons:hover {
+#subscribe_block .material-icons:hover {
   background-color: rgb(236, 199, 38);
   cursor: pointer;
 }
