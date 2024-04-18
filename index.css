@@ -188,6 +188,12 @@ section {
   border: solid 4px rgb(181, 181, 181);
 }
 
+.article:hover {
+  background-color: rgb(255, 255, 172);
+  border: solid 4px rgb(218, 218, 127);
+  cursor: pointer;
+}
+
 .image_container {
   width: 50%;
   height: 170px;
@@ -257,6 +263,7 @@ footer ul {
 
 footer ul li {
   margin: 10px;
+  cursor: pointer;
 }
 
 /* Media queries du footer */
