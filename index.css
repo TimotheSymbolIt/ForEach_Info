@@ -234,9 +234,19 @@ section {
 
 /* Footer */
 
+footer {
+  background-color: #dc5f5f;
+  color: white;
+  padding: 10px 0;
+}
+
 footer ul {
   display: flex;
   justify-content: center;
+}
+
+footer ul li {
+  margin: 10px;
 }
 
 /*  */
