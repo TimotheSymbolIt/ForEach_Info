@@ -140,10 +140,24 @@ nav ul li:hover {
 
 /* Main */
 
+h2 {
+  font-family: "Chunk";
+  color: #dc5f5f;
+  margin-bottom: 10px;
+}
+
+section {
+  max-width: 1200px;
+  margin: auto;
+
+  margin-top: 20px;
+}
+
 .articles {
   display: flex;
 
-  background-color: grey;
+  background-color: rgb(204, 204, 204);
+  border-radius: 5px;
 }
 
 .article {
@@ -151,15 +165,39 @@ nav ul li:hover {
 
   flex-basis: 0;
   flex-grow: 1;
+
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border: solid 4px rgb(181, 181, 181);
 }
 
 .image_container {
   width: 50%;
-  height: 200px;
+  height: 170px;
 }
 
 .article_description {
   width: 50%;
+  height: 170px;
+
+  margin-left: 10px;
+}
+
+.article_title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  font-weight: bold;
+}
+
+.article_content {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /*  */
