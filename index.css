@@ -7,13 +7,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 /* Header */
 
 #top_red_divider {
   height: 5px;
-  background: #dc5f5f;
+  background-color: #dc5f5f;
 }
 
 #header_section {
@@ -82,6 +87,45 @@ h1 {
   #header_section {
     display: flex;
     justify-content: center;
+  }
+}
+
+/*  */
+
+/*  */
+
+/* Navbar */
+
+nav {
+  background-color: #dc5f5f;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav ul li {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 10px;
+
+  text-align: center;
+}
+
+nav ul li:hover {
+  background-color: #c95454;
+  cursor: pointer;
+}
+
+/* Media Queries de navbar */
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
   }
 }
 
