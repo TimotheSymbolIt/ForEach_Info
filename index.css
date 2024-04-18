@@ -119,3 +119,16 @@ nav ul li:hover {
   background-color: #c95454;
   cursor: pointer;
 }
+
+/* Media Queries de navbar */
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*  */
+
+/*  */
