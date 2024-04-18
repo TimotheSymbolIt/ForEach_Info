@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Header */
 
 #top_red_divider {
@@ -88,3 +92,16 @@ h1 {
 /*  */
 
 /*  */
+
+/* Navbar */
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  flex-basis: 0;
+  flex-grow: 1;
+
+  text-align: center;
+}
