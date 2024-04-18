@@ -1,0 +1,309 @@
+@font-face {
+  font-family: "Chunk";
+  src: url(./assets/fonts/Chunk.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  all: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+
+#top_red_divider {
+  height: 5px;
+  background-color: #dc5f5f;
+}
+
+#header_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#header_section_left_part {
+  display: flex;
+  align-items: center;
+}
+
+#menu_button {
+  background-color: rgb(204, 204, 204);
+  padding: 5px 10px;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+}
+
+#menu_button:hover {
+  background-color: rgb(181, 181, 181);
+  cursor: pointer;
+}
+
+.menu_button_label {
+  margin-left: 10px;
+}
+
+h1 {
+  margin-left: 10px;
+  font-family: "Chunk";
+  color: #dc5f5f;
+}
+
+#header_section_subtitle {
+  margin-left: 10px;
+}
+
+#subscribe_button {
+  background-color: #ffd830;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+#subscribe_button:hover {
+  background-color: rgb(236, 199, 38);
+  cursor: pointer;
+}
+
+/* Media Queries de header */
+
+@media screen and (max-width: 600px) {
+  #subscribe_button,
+  .menu_button_label,
+  #header_section_subtitle {
+    display: none;
+  }
+
+  #header_section {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*  */
+
+/*  */
+
+/* Navbar */
+
+nav {
+  background-color: #dc5f5f;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav a {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+nav ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li:hover {
+  background-color: #c95454;
+  cursor: pointer;
+}
+
+/* Media Queries de navbar */
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*  */
+
+/*  */
+
+/* Main */
+
+main {
+  padding: 30px 0;
+}
+
+h2 {
+  font-family: "Chunk";
+  color: #dc5f5f;
+  margin-bottom: 10px;
+}
+
+section {
+  max-width: 1200px;
+  margin: auto;
+
+  margin-bottom: 20px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: row;
+
+  background-color: rgb(204, 204, 204);
+  border-radius: 5px;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+
+  flex-basis: 0;
+  flex-grow: 1;
+
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border: solid 4px rgb(181, 181, 181);
+}
+
+.article:hover {
+  background-color: rgb(255, 255, 172);
+  border: solid 4px rgb(218, 218, 127);
+  cursor: pointer;
+}
+
+.image_container {
+  width: 50%;
+  height: 170px;
+}
+
+.article_description {
+  width: 50%;
+  height: 170px;
+
+  margin-left: 10px;
+}
+
+.article_title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  font-weight: bold;
+}
+
+.article_content {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Media queries de main */
+
+@media screen and (max-width: 600px) {
+  main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    margin-bottom: 0;
+  }
+
+  .article:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+/*  */
+
+/*  */
+
+/* Footer */
+
+footer {
+  background-color: #dc5f5f;
+  color: white;
+  padding: 10px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Media queries du footer */
+
+@media screen and (max-width: 600px) {
+  footer ul {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  }
+}
+
+/*  */
+
+/*  */
+
+/* Redirect button */
+
+@media screen and (max-width: 600px) {
+  #redirect_button {
+    background-color: #dc5f5f;
+    color: white;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    cursor: pointer;
+  }
+}
+
+/*  */
