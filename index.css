@@ -231,3 +231,12 @@ section {
 /*  */
 
 /*  */
+
+/* Footer */
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+/*  */
