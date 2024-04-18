@@ -159,6 +159,7 @@ section {
 
 .articles {
   display: flex;
+  flex-direction: row;
 
   background-color: rgb(204, 204, 204);
   border-radius: 5px;
@@ -166,6 +167,7 @@ section {
 
 .article {
   display: flex;
+  flex-direction: row;
 
   flex-basis: 0;
   flex-grow: 1;
@@ -203,5 +205,29 @@ section {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Media queries de main */
+
+@media screen and (max-width: 600px) {
+  main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    margin-bottom: 0;
+  }
+
+  .article:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+/*  */
 
 /*  */
